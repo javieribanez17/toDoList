@@ -1,0 +1,6 @@
+# Ignora la carpeta node_modules
+node_modules
+# Ignora las variables de entorno
+.env
+# Ignora los archivos relacionados de configuración
+.DS_Store
