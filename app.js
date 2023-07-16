@@ -52,6 +52,7 @@ const listSchema = new Schema({
     tasks: [taskSchema]
 });
 const List = mongoose.model("List", listSchema);
+const port = process.env.PORT || 3000;
 //Respond on main page server
 app.get("/", async function (req, res) {
     //UTF-8
@@ -142,6 +143,6 @@ app.get("/about", function (req, res) {
     res.render("about");
 })
 //Initialize port 
-app.listen(3000, function (req, res) {
+app.listen(port, function (req, res) {
     console.log("Servidor corriendo en el puerto 3000");
 })
